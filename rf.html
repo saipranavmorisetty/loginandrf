@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+    <!-- External JavaScript file for form validation -->
+    <script src="form-validation.js" defer></script>
+</head>
+
+<body bgcolor="black" style="color:rgb(255, 255, 255);">
+    <form id="registrationForm">
+        <div class="abcd" style="padding-left:450px">
+            <div class="pranav">
+                <h1 style="padding-left:70px">Registration Form</h1>
+                <div class="main" style="border: 1px solid rgb(255, 255, 255); width:400px; height:437px;   ">
+                    <div class="container" style="background-color: white; color:black">
+                        <div class="name">
+                            <div id="firstname">
+                                <label for="fname" id="first">First Name</label>
+                                <input type="text" id="fname" name="fname" placeholder="Jake" required>
+                            </div><br>
+                            <div id="lastname">
+                                <label for="lname" id="last">Last Name</label>
+                                <input type="text" id="lname" name="lname" placeholder="Paul" required>
+                            </div><br>
+                        </div>
+                        <div class="line2">
+                            <div class="bday">
+                                <label for="birthday">Date of Birth</label>
+                                <input type="date" id="birthdate" name="birthdate" required>
+                            </div><br>
+                            <div class="email">
+                                <label for="email">Email</label>
+                                <input type="email" id="mail" name="mail" placeholder="jack@mail.com" required>
+                            </div><br>
+                        </div><br>
+                        <div class="line3">
+                            <div class="gender">
+                                <div id="gen"><label for="gender">Gender</label><br></div>
+                                <div id="val"><input type="radio" name="gender" value="male">Male<br></div>
+                                <div id="val"><input type="radio" name="gender" value="female">Female<br></div>
+                                <div id="val"><input type="radio" name="gender" value="other">Other<br></div>
+                            </div>
+                        </div><br>
+                        <div class="pp">
+                            <label for="passport">Upload your passport size photo</label><br>
+                            <div class="cv"><input type="file" name="fileupload" accept="image/*"></div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="line4" style="background-color: white; color:black">
+                        <div class="phn" style="background-color: white; color:black">
+                            <label for="phone">Enter your Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="9876543210" max="10" required><br><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="line5">
+                    <input type="reset" name="reset" value="Reset" id="reset" />
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+
+</html>
